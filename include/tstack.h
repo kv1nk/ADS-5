@@ -17,6 +17,7 @@ class TStack {
   bool isFull() const { return top == size - 1; }
   T get() const {
     if (!isEmpty()) return arr[top];
+    return {};
   }
   void pop() {
     if (!isEmpty()) top--;
