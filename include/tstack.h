@@ -5,9 +5,9 @@
 template <typename T, int size>
 class TStack {
  private:
- static const int kSize = size;
+  static const int kSize = size;
   T arr[kSize];  // массив для хранения элементов
-  int top;      // позиция вершины стека
+  int top;       // позиция вершины стека
  public:
   // конструктор класса
   TStack() : top(-1) {}
