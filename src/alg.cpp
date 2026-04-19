@@ -68,7 +68,7 @@ std::string infx2pstfx(const std::string& inf) {
 
 int eval(const std::string& pref) {
   TStack<int, 10> stack;
-  for (int i = 0; i <= pref.length(); i++) {
+  for (int i = 0; i < pref.length(); i++) {
     char ch = pref[i];
 
     if (ch == ' ') continue;
