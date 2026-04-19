@@ -4,7 +4,6 @@
 
 #include "tstack.h"
 
-using namespace std;
 bool isOper(char x) {
   if (x > 41 && x < 48) {
     return 1;
@@ -31,7 +30,7 @@ int getPrior(char ch) {
 
 std::string infx2pstfx(const std::string& inf) {
   TStack<char, 10> stack;
-  string res = "";
+  std::string res = "";
 
   for (int i = 0; i < inf.length(); i++) {
     char ch = inf[i];
